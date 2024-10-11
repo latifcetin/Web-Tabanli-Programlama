@@ -9,15 +9,35 @@
             margin: 0;
             padding: 20px;
         }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffcc00;
+            color: #000;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
         nav {
             background-color: #ffcc00;
-            padding: 10px;
-            margin-bottom: 20px;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 30px;
         }
         nav a {
-            margin: 0 15px;
+            display: block;
+            padding: 10px;
+            margin: 5px auto;
+            width: 200px;
+            background-color: #fff;
             text-decoration: none;
             color: #000;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #ffd700;
         }
         section {
             margin-bottom: 40px;
@@ -29,14 +49,15 @@
     </style>
 </head>
 <body>
-<a href="hafta2.html">
 
-    Hafta 2 ödev-Masal
-</a>
-<a href="hafta3.html">
+<header>
+    Latif Çetin
+</header>
 
-    Hafta 3 tablo
-</a>
+<nav>
+    <a href="hafta2.html">Hafta 2 ödev - Masal</a>
+    <a href="hafta3.html">Hafta 3 ödev - tablo</a>
+</nav>
 
 </body>
 </html>
