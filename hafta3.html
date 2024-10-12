@@ -3,172 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haftalık Ders Programı</title>
+    <title>Tablolar</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
+            margin-bottom: 20px;
         }
         th, td {
             border: 1px solid black;
             padding: 10px;
             text-align: center;
+            min-width: 100px; 
+            height: 50px;
         }
         th {
             background-color: #f2f2f2;
         }
+        h1, h2, h4 {
+            margin: 10px 0;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 95%;
+            padding: 8px;
+            margin: 5px 0;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin: 0 5px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
-    <h2>Haftalık Ders Programı</h2>
+
+<h2>Haftalık Ders Programı</h2>
+<table>
+    <tr>
+        <th>Saat</th>
+        <th>Pazartesi</th>
+        <th>Salı</th>
+        <th>Çarşamba</th>
+        <th>Perşembe</th>
+        <th>Cuma</th>
+    </tr>
+    <tr>
+        <td>08:40 - 09:30</td>
+        <td>BTE307.01 Eğitimde Modelleme ve Tasarım</td>
+        <td>Ders 2</td>
+        <td>Ders 3</td>
+        <td>Ders 4</td>
+        <td>BTE311 Web Tabanlı Programlama</td>
+    </tr>
+    <tr>
+        <td>09:40 - 10:30</td>
+        <td>BTE307.01 Eğitimde Modelleme ve Tasarım</td>
+        <td>Ders 7</td>
+        <td>Ders 8</td>
+        <td>Ders 9</td>
+        <td>BTE311 Web Tabanlı Programlama</td>
+    </tr>
+    <tr>
+        <td>10:40 - 11:30</td>
+        <td>Ders 11</td>
+        <td>Ders 12</td>
+        <td>Ders 13</td>
+        <td>Ders 14</td>
+        <td>BTE311 Web Tabanlı Programlama</td>
+    </tr>
+    <tr>
+        <td>11:40 - 12:30</td>
+        <td>Ders 16</td>
+        <td>Ders 17</td>
+        <td>Ders 18</td>
+        <td>Ders 19</td>
+         <td>BTE311 Web Tabanlı Programlama</td>
+    </tr>
+    <tr>
+        <td>12:40 - 13:30</td>
+        <td>Ders 21</td>
+        <td>Ders 22</td>
+        <td>BTE322 Eğitimde Yapay Zekâ Uyg.</td>
+        <td>Ders 24</td>
+        <td>Ders 25</td>
+    </tr>
+    <tr>
+        <td>13:40 - 14:30</td>
+        <td>Ders 21</td>
+        <td>Ders 22</td>
+        <td>BTE322 Eğitimde Yapay Zekâ Uyg.</td>
+        <td>Ders 24</td>
+        <td>Ders 25</td>
+    </tr>
+    <tr>
+        <td>14:40 - 15:30</td>
+        <td>Ders 21</td>
+        <td>BTE309 Bilişim Eğitim Programları</td>
+        <td>Ders 23</td>
+        <td>Ders 24</td>
+        <td>Ders 25</td>
+    </tr>
+    <tr>
+        <td>15:40 - 16:30</td>
+        <td>Ders 21</td>
+         <td>BTE309 Bilişim Eğitim Programları</td>
+        <td>Ders 23</td>
+        <td>Ders 24</td>
+        <td>Ders 25</td>
+    </tr>
+</table>
+
+<h1>Lütfen Formu Eksiksiz Doldurunuz.</h1>
+<h4>Hesap Bilgileriniz</h4>
+<form>
     <table>
         <tr>
-            <th>Saat</th>
-            <th>Pazartesi</th>
-            <th>Salı</th>
-            <th>Çarşamba</th>
-            <th>Perşembe</th>
-            <th>Cuma</th>
+            <td>Kullanıcı Adı:</td>
+            <td><input type="text" name="username" placeholder="Kullanıcı adı giriniz" required></td>
         </tr>
         <tr>
-            <td>08:40 - 9:30</td>
-            <td>BTE307.01 Eğitimde Modelleme 
-                ve Tasarım
-                Dr. A. ÖZKÖK 
-                D1</td>
-            <td>Ders 2</td>
-            <td>Ders 3</td>
-            <td>Ders 4</td>
-            <td>Ders 5</td>
+            <td>Eposta:</td>
+            <td><input type="email" name="eposta" placeholder="Eposta giriniz" required></td>
         </tr>
         <tr>
-            <td>9:40 - 10:30</td>
-            <td>Ders 6</td>
-            <td>Ders 7</td>
-            <td>Ders 8</td>
-            <td>Ders 9</td>
-            <td>Ders 10</td>
-        </tr>
-        <tr>
-            <td>10:40 - 11:30</td>
-            <td>Ders 11</td>
-            <td>Ders 12</td>
-            <td>Ders 13</td>
-            <td>Ders 14</td>
-            <td>Ders 15</td>
-        </tr>
-        <tr>
-            <td>11:40 - 12:30</td>
-            <td>Ders 16</td>
-            <td>Ders 17</td>
-            <td>Ders 18</td>
-            <td>Ders 19</td>
-            <td>Ders 20</td>
-        </tr>
-        <tr>
-            <td>12:40 - 13:30</td>
-            <td>Ders 21</td>
-            <td>Ders 22</td>
-            <td>Ders 23</td>
-            <td>Ders 24</td>
-            <td>Ders 25</td>
-        </tr>
-        <tr>
-            <td>13:40 - 14:30</td>
-            <td>Ders 21</td>
-            <td>Ders 22</td>
-            <td>Ders 23</td>
-            <td>Ders 24</td>
-            <td>Ders 25</td>
-        </tr>
-        <tr>
-            <td>14:40 - 15:30</td>
-            <td>Ders 21</td>
-            <td>Ders 22</td>
-            <td>Ders 23</td>
-            <td>Ders 24</td>
-            <td>Ders 25</td>
-        </tr>
-        <tr>
-            <td>15:40 - 16:30</td>
-            <td>Ders 21</td>
-            <td>Ders 22</td>
-            <td>Ders 23</td>
-            <td>Ders 24</td>
-            <td>Ders 25</td>
+            <td>Parola:</td>
+            <td><input type="password" name="parola" placeholder="Parola giriniz" required></td>
         </tr>
     </table>
+    
+    <h4>Kişisel Bilgileriniz</h4>
+    <table>
+        <tr>
+            <td>Ad:</td>
+            <td><input type="text" name="ad"></td>
+        </tr>
+        <tr>
+            <td>Soyad:</td>
+            <td><input type="text" name="soyad"></td>
+        </tr>
+        <tr>
+            <td>Şehir:</td>
+            <td>
+                <select name="sehir">
+                    <option value="">Seçiniz</option>
+                    <option value="Ankara">Ankara</option>
+                    <option value="İstanbul">İstanbul</option>
+                    <option value="Kocaeli">Kocaeli</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Cinsiyet:</td>
+            <td>
+                <label><input type="radio" name="cinsiyet" value="erkek"> Erkek</label>
+                <label><input type="radio" name="cinsiyet" value="kadin"> Kadın</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Hobileriniz:</td>
+            <td>
+                <label><input type="checkbox" name="hobiler" value="sinema"> Sinema</label>
+                <label><input type="checkbox" name="hobiler" value="gezmek"> Gezmek</label>
+                <label><input type="checkbox" name="hobiler" value="spor"> Spor</label>
+                <label><input type="checkbox" name="hobiler" value="kitap"> Kitap</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Kaydet">
+            </td>
+        </tr>
+    </table>
+</form>
+
+<h1 style="text-align: center;">HTML Table</h1>
+<table border="1" width="800" height="400" cellpadding="20" style="text-align: center; border-collapse: collapse; margin: auto;">
+    <tr>
+        <td colspan="3">Cell 1</td>
+    </tr>
+    <tr>
+        <td rowspan="3">Cell 4</td>
+        <td colspan="2">Cell 2</td>
+        <td colspan="2">Cell 3</td>
+    </tr>
+    <tr>
+        <td>Cell 5</td>
+        <td>Cell 6</td>
+        <td>Cell 7</td>
+    </tr>
+    <tr>
+        <td colspan="2">Cell 8</td>
+    </tr>
+    <tr>
+        <td colspan="2">Cell 9</td>
+        <td colspan="2">Cell 10</td>
+    </tr>
+</table>
+
 </body>
 </html>
-
-<table border="1" cellpadding="10">
-    <tr>
-      <td colspan="2">
-        <h1>Lütfen Formu Eksiksiz Doldurunuz.</h1>
-        <hr>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2">
-        <h4>Hesap Bilgileriniz</h4>
-      </td>
-    </tr>
-    <tr>
-      <td>Kullanıcı Adı:</td>
-      <td><input type="text" name="username" placeholder="Kullanıcı adı giriniz" required></td>
-    </tr>
-    <tr>
-      <td>Eposta:</td>
-      <td><input type="email" name="eposta" placeholder="Eposta giriniz" required></td>
-    </tr>
-    <tr>
-      <td>Parola:</td>
-      <td><input type="password" name="parola" placeholder="parola giriniz" required></td>
-    </tr>
-    <tr>
-      <td colspan="2">
-        <h4>Kişisel Bilgileriniz</h4>
-      </td>
-    </tr>
-    <tr>
-      <td>Ad:</td>
-      <td><input type="text" name="ad"></td>
-    </tr>
-    <tr>
-      <td>Soyad:</td>
-      <td><input type="text" name="soyad"></td>
-    </tr>
-    <tr>
-      <td>Şehir:</td>
-      <td>
-        <select name="sehir">
-          <option>Seçiniz</option>
-          <option>Ankara</option>
-          <option>İstanbul</option>
-          <option>Kocaeli</option>
-        </select>
-      </td>
-    </tr>
-    <tr>
-      <td>Cinsiyet:</td>
-      <td>
-        <input type="radio" name="cinsiyet"> Erkek
-        <input type="radio" name="cinsiyet"> Kadın
-      </td>
-    </tr>
-    <tr>
-      <td>Hobileriniz:</td>
-      <td>
-        <input type="checkbox" name="hobiler"> Sinema
-        <input type="checkbox" name="hobiler"> Gezmek
-        <input type="checkbox" name="hobiler"> Spor
-        <input type="checkbox" name="hobiler"> Kitap
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2" align="center">
-        <input type="submit" value="Kaydet">
-      </td>
-    </tr>
-  </table>
-  
