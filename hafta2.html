@@ -10,7 +10,7 @@
             padding: 20px;
         }
         nav {
-            background-color: #ffcc00;
+            background-color: #15202b;
             padding: 10px;
             margin-bottom: 20px;
         }
@@ -30,13 +30,18 @@
 </head>
 <body>
 
+<style>
+    nav a {
+        color: white;
+    }
+</style>
 <nav>
     <a href="#bolum1">Bölüm 1</a>
     <a href="#bolum2">Bölüm 2</a>
     <a href="#bolum3">Bölüm 3</a>
     <a href="#bolum4">Bölüm 4</a>
 </nav>
-
+    
 <section id="bolum1">
     <h2>Bölüm 1: Kayıp Altın Top</h2>
     <img src="images/image.jpg" alt="Masal Başlangıcı">
@@ -46,7 +51,6 @@
         <audio controls>
             <source src="audio/bolum1.mp3" type="audio/mpeg">    
             <a href="audio/bolum1.mp3/"> Download audio </a>
-            Tarayıcınız ses öğesini desteklemiyor.
         </audio>
     </figure>
 </section>
@@ -59,7 +63,6 @@
         <figcaption>Bölüm 2'yi dinle:</figcaption>
         <audio controls>
             <source src="audio/bolum2.mp3" type="audio/mpeg">
-            Tarayıcınız ses öğesini desteklemiyor.
         </audio>
     </figure>
 </section>
@@ -72,7 +75,6 @@
         <figcaption>Bölüm 3'ü dinle:</figcaption>
         <audio controls>
             <source src="audio/bolum3.mp3" type="audio/mpeg">
-            Tarayıcınız ses öğesini desteklemiyor.
         </audio>
     </figure>
 </section>
@@ -85,13 +87,9 @@
         <figcaption>Bölüm 4'ü dinle:</figcaption>
         <audio controls>
             <source src="audio/bolum4.mp3" type="audio/mpeg">
-            Tarayıcınız ses öğesini desteklemiyor.
         </audio>
     </figure>
 </section>
 
 </body>
 </html>
-```
-
-Bu şekilde, her bölümde ses çalma özelliği eklenmiş olacaktır. Ses dosyalarını `"audio/bolum1.mp3"` gibi belirtilen yerlerde kendi dosyalarınızla değiştirmeyi unutmayın.
