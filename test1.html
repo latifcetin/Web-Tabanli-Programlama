@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Test1</title>
+    <link rel="stylesheet" href="test1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Web Programcılığı Sınavı</h1>
+        <form>
+            <label for="name">Adınız Soyadınız:</label>
+            <input type="text" id="name" name="name" placeholder="Adınızı ve soyadınızı girin" required>
+
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" name="email" placeholder="E-posta adresinizi girin" required>
+
+            <label for="grade">Sınıfınız:</label>
+            <input type="number" id="grade" name="grade" min="1" max="4" required>            
+
+            <label for="level">Web Programlama Seviyeniz:</label>
+            <select id="level" name="level" required>
+                <option value="" disabled selected>Seçiniz...</option>
+                <option value="beginner">Başlangıç</option>
+                <option value="intermediate">Orta Seviye</option>
+                <option value="advanced">İleri Seviye</option>
+            </select>
+
+            <label for="question1">1. Soru: HTML'de bir form oluşturmak için hangi etiket kullanılır? Açıklayın ve bir örnek verin.</label>
+            <textarea id="question1" name="question1" rows="4" placeholder="Cevabınızı buraya yazın" required></textarea>
+
+            <label>2. Soru: CSS ile bir öğeyi ortalamak için hangi yöntem daha yaygındır?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="css-center" value="flex" required> Flexbox ile ortalama</label>
+                <label><input type="radio" name="css-center" value="grid"> Grid sistemi ile ortalama</label>
+                <label><input type="radio" name="css-center" value="margin"> Margin: auto kullanarak ortalama</label>
+            </div>
+
+            <label>3. Soru: JavaScript'te hangi yapılar döngü oluşturmak için kullanılır?</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="js-loops" value="for"> for döngüsü</label>
+                <label><input type="checkbox" name="js-loops" value="while"> while döngüsü</label>
+                <label><input type="checkbox" name="js-loops" value="if"> if koşul yapısı</label>
+                <label><input type="checkbox" name="js-loops" value="do-while"> do-while döngüsü</label>
+            </div>
+
+            <label for="comments">Eklemek İstediğiniz Bir Şey Var mı?</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Başka bir şey..."></textarea>
+
+            <button type="submit" class="submit-btn">Sınavı Gönder</button>
+        </form>
+    </div>
+</body>
+</html>
