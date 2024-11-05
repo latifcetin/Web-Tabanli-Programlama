@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablolar</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial;
             margin: 20px;
             text-align: center;
         }
         table {
-            width: 100%;
+            width: 60%;
             border-collapse: collapse;
-            margin-bottom: 20px;
+            margin: 20px auto;
         }
         th, td {
             border: 1px solid black;
             padding: 10px;
             text-align: center;
-            min-width: 100px; 
-            height: 50px;
+            min-width: 100px;
         }
         th {
             background-color: #f2f2f2;
@@ -32,7 +30,7 @@
         input[type="email"],
         input[type="password"],
         select {
-            width: 95%;
+            width: 80%;
             padding: 8px;
             margin: 5px 0;
         }
@@ -49,6 +47,19 @@
         }
         input[type="submit"]:hover {
             background-color: #45a049;
+        }
+
+        /* Güncellenmiş CSS */
+        .custom-table {
+            width: 800px;
+            height: 400px;
+            text-align: center;
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        .custom-table td, .custom-table th {
+            padding: 20px;
         }
     </style>
 </head>
@@ -67,66 +78,66 @@
     <tr>
         <td>08:40 - 09:30</td>
         <td>BTE307.01 Eğitimde Modelleme ve Tasarım</td>
-        <td>Ders 2</td>
-        <td>Ders 3</td>
-        <td>Ders 4</td>
+        <td></td>
+        <td></td>
+        <td></td>
         <td>BTE311 Web Tabanlı Programlama</td>
     </tr>
     <tr>
         <td>09:40 - 10:30</td>
         <td>BTE307.01 Eğitimde Modelleme ve Tasarım</td>
-        <td>Ders 7</td>
-        <td>Ders 8</td>
-        <td>Ders 9</td>
+        <td></td>
+        <td></td>
+        <td></td>
         <td>BTE311 Web Tabanlı Programlama</td>
     </tr>
     <tr>
         <td>10:40 - 11:30</td>
-        <td>Ders 11</td>
-        <td>Ders 12</td>
-        <td>Ders 13</td>
-        <td>Ders 14</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
         <td>BTE311 Web Tabanlı Programlama</td>
     </tr>
     <tr>
         <td>11:40 - 12:30</td>
-        <td>Ders 16</td>
-        <td>Ders 17</td>
-        <td>Ders 18</td>
-        <td>Ders 19</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
          <td>BTE311 Web Tabanlı Programlama</td>
     </tr>
     <tr>
         <td>12:40 - 13:30</td>
-        <td>Ders 21</td>
-        <td>Ders 22</td>
+        <td></td>
+        <td></td>
         <td>BTE322 Eğitimde Yapay Zekâ Uyg.</td>
-        <td>Ders 24</td>
-        <td>Ders 25</td>
+        <td></td>
+        <td></td>
     </tr>
     <tr>
         <td>13:40 - 14:30</td>
-        <td>Ders 21</td>
-        <td>Ders 22</td>
+        <td></td>
+        <td></td>
         <td>BTE322 Eğitimde Yapay Zekâ Uyg.</td>
-        <td>Ders 24</td>
-        <td>Ders 25</td>
+        <td></td>
+        <td></td>
     </tr>
     <tr>
         <td>14:40 - 15:30</td>
-        <td>Ders 21</td>
+        <td></td>
         <td>BTE309 Bilişim Eğitim Programları</td>
-        <td>Ders 23</td>
-        <td>Ders 24</td>
-        <td>Ders 25</td>
+        <td></td>
+        <td></td>
+        <td></td>
     </tr>
     <tr>
         <td>15:40 - 16:30</td>
-        <td>Ders 21</td>
+        <td></td>
          <td>BTE309 Bilişim Eğitim Programları</td>
-        <td>Ders 23</td>
-        <td>Ders 24</td>
-        <td>Ders 25</td>
+        <td></td>
+        <td></td>
+        <td></td>
     </tr>
 </table>
 
@@ -194,26 +205,25 @@
 </form>
 
 <h1 style="text-align: center;">HTML Table</h1>
-<table border="1" width="800" height="400" cellpadding="20" style="text-align: center; border-collapse: collapse; margin: auto;">
+<table class="custom-table">
     <tr>
         <td colspan="3">Cell 1</td>
     </tr>
     <tr>
         <td rowspan="3">Cell 4</td>
-        <td colspan="2">Cell 2</td>
-        <td colspan="2">Cell 3</td>
+        <td>Cell 2</td>
+        <td>Cell 3</td>
     </tr>
     <tr>
         <td>Cell 5</td>
         <td>Cell 6</td>
-        <td>Cell 7</td>
     </tr>
     <tr>
         <td colspan="2">Cell 8</td>
     </tr>
     <tr>
         <td colspan="2">Cell 9</td>
-        <td colspan="2">Cell 10</td>
+        <td>Cell 10</td>
     </tr>
 </table>
 
