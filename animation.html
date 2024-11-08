@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Animasyonlu Yüzler</title>
+    <title>Animation</title>
     <style>
         * {
             margin: 0;
@@ -12,39 +12,43 @@
         body {
             display: flex;
             justify-content: space-around;
-            align-items: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
             height: 100vh;
             background-color: #f4f4f4;
+            padding: 20px;
         }
         .kutu {
-            width: 200px;
-            height: 200px;
-            margin: 20px;
-            display: inline-block;
+            width: 15vw; /* Kutunun genişliği ekran genişliğine göre ayarlanıyor */
+            height: 15vw; /* Yükseklik genişliğe bağlı */
             position: relative;
             border-radius: 50%;
-            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            min-width: 150px; /* Minimum genişlik */
+            min-height: 150px; /* Minimum yükseklik */
+            max-width: 200px; /* Çok büyük ekranlarda maksimum genişlik */
+            max-height: 200px; /* Maksimum yükseklik */
         }
-
         .kutu::before, .kutu::after {
             content: '';
-            width: 20px; 
+            width: 20px; /* Gözlerin boyutu sabit */
             height: 20px;
             background-color: black;
             border-radius: 50%;
             position: absolute;
-            top: 60px; 
+            top: 40px;
         }
         .kutu::before {
-            left: 60px; 
+            left: 40px;
         }
         .kutu::after {
-            right: 60px; 
+            right: 40px;
         }
 
         .agiz {
             position: absolute;
-            bottom: 60px; 
+            bottom: 30px;
             left: 50%;
             width: 80px;
             height: 40px;
@@ -62,13 +66,15 @@
         }
 
         .saskin .agiz {
-            height: 50px; 
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
         }
 
         .sinirli .agiz {
-            height: 15px; 
-            border-radius: 0;
+            width: 60px;
+            height: 10px;
+            border-radius: 5px;
         }
 
         .kapanan .agiz {
@@ -78,33 +84,33 @@
         }
 
         .yukari-asagi {
-            background-color: #812895;
+            background-color: #d000ff;
             animation: yukariAsagi 2s infinite alternate;
         }
         .buyume-kuculme {
-            background-color: #d72f1d;
+            background-color: #ff1900;
             animation: buyumeKuculme 2s infinite alternate;
         }
         .kaybol-belir {
-            background-color: #ca6566;
+            background-color: #e1ff00;
             animation: kaybolBelir 2s infinite alternate;
         }
         .saga-sola {
-            background-color: #2ecc71;
+            background-color: #00ff55;
             animation: sagaSola 2s infinite alternate;
         }
         .dondur {
-            background-color: #31397a;
+            background-color: #001eff;
             animation: dondur 2s infinite linear;
         }
 
         @keyframes yukariAsagi {
             0% { transform: translateY(0); }
-            100% { transform: translateY(50px); }
+            100% { transform: translateY(20px); }
         }
         @keyframes buyumeKuculme {
             0% { transform: scale(1); }
-            100% { transform: scale(1.5); }
+            100% { transform: scale(1.3); }
         }
         @keyframes kaybolBelir {
             0% { opacity: 1; }
@@ -112,7 +118,7 @@
         }
         @keyframes sagaSola {
             0% { transform: translateX(0); }
-            100% { transform: translateX(50px); }
+            100% { transform: translateX(20px); }
         }
         @keyframes dondur {
             0% { transform: rotate(0deg); }
