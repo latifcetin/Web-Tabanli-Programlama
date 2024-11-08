@@ -2,30 +2,93 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Masal Örneği</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
+            background-color: #e0f7fa;
             margin: 0;
             padding: 20px;
+            color: #333;
         }
+
         nav {
-            background-color: #2b3945;
-            padding: 10px;
+            background-color: #00796b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            border-radius: 8px;
             margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+        
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: white; 
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
         }
+        
+        nav a:hover {
+            color: #ffeb3b;
+        }
+
         section {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
             margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
+        
+        section h2 {
+            color: #00796b;
+            margin-top: 0;
+            text-align: center;
+        }
+
         img {
             max-width: 100%;
             height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0 0;
+            text-align: center;
+        }
+
+        audio {
+            margin-top: 10px;
+            outline: none;
+        }
+
+        @media (min-width: 768px) {
+            section {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 30px;
+            }
+            
+            img {
+                max-width: 50%;
+                margin-right: 20px;
+            }
+
+            figure {
+                max-width: 50%;
+            }
         }
     </style>
 </head>
@@ -39,52 +102,60 @@
 </nav>
     
 <section id="bolum1">
-    <h2>Bölüm 1: Kayıp Altın Top</h2>
     <img src="images/image.jpg" alt="Masal Başlangıcı">
-    <p>Bir zamanlar, güzel bir prenses bir krallıkta yaşıyordu...</p>
-    <figure>
-        <figcaption>Bölüm 1'i dinle:</figcaption>
-        <audio controls>
-            <source src="audio/bolum1.mp3" type="audio/mpeg">    
-            <a href="audio/bolum1.mp3" download>Download audio</a>
-        </audio>
-    </figure>
+    <div>
+        <h2>Bölüm 1: Kayıp Altın Top</h2>
+        <p>Bir zamanlar, güzel bir prenses bir krallıkta yaşıyordu...</p>
+        <figure>
+            <figcaption>Bölüm 1'i dinle:</figcaption>
+            <audio controls>
+                <source src="audio/bolum1.mp3" type="audio/mpeg">    
+                <a href="audio/bolum1.mp3" download>Download audio</a>
+            </audio>
+        </figure>
+    </div>
 </section>
 
 <section id="bolum2">
-    <h2>Bölüm 2: Sözleşme</h2>
     <img src="images/image1.jpg" alt="Masalda Macera">
-    <p>Prenses, çaresiz kaldığı için kurbağanın teklifini kabul etti...</p>
-    <figure>
-        <figcaption>Bölüm 2'yi dinle:</figcaption>
-        <audio controls>
-            <source src="audio/bolum2.mp3" type="audio/mpeg">
-        </audio>
-    </figure>
+    <div>
+        <h2>Bölüm 2: Sözleşme</h2>
+        <p>Prenses, çaresiz kaldığı için kurbağanın teklifini kabul etti...</p>
+        <figure>
+            <figcaption>Bölüm 2'yi dinle:</figcaption>
+            <audio controls>
+                <source src="audio/bolum2.mp3" type="audio/mpeg">
+            </audio>
+        </figure>
+    </div>
 </section>
 
 <section id="bolum3">
-    <h2>Bölüm 3: Dönüşüm</h2>
     <img src="images/image2.jpg" alt="Masalda Zorluklar">
-    <p>Bir akşam, prenses yine göletin kenarında otururken, kurbağa yanına geldi...</p>
-    <figure>
-        <figcaption>Bölüm 3'ü dinle:</figcaption>
-        <audio controls>
-            <source src="audio/bolum3.mp3" type="audio/mpeg">
-        </audio>
-    </figure>
+    <div>
+        <h2>Bölüm 3: Dönüşüm</h2>
+        <p>Bir akşam, prenses yine göletin kenarında otururken, kurbağa yanına geldi...</p>
+        <figure>
+            <figcaption>Bölüm 3'ü dinle:</figcaption>
+            <audio controls>
+                <source src="audio/bolum3.mp3" type="audio/mpeg">
+            </audio>
+        </figure>
+    </div>
 </section>
 
 <section id="bolum4">
-    <h2>Bölüm 4: Mutlu Son</h2>
     <img src="images/image3.jpg" alt="Masalda Mutluluk">
-    <p>Prenses, kurbağayı öptüğünde, birden kurbağa muhteşem bir prens haline dönüştü...</p>
-    <figure>
-        <figcaption>Bölüm 4'ü dinle:</figcaption>
-        <audio controls>
-            <source src="audio/bolum4.mp3" type="audio/mpeg">
-        </audio>
-    </figure>
+    <div>
+        <h2>Bölüm 4: Mutlu Son</h2>
+        <p>Prenses, kurbağayı öptüğünde, birden kurbağa muhteşem bir prens haline dönüştü...</p>
+        <figure>
+            <figcaption>Bölüm 4'ü dinle:</figcaption>
+            <audio controls>
+                <source src="audio/bolum4.mp3" type="audio/mpeg">
+            </audio>
+        </figure>
+    </div>
 </section>
 
 </body>
