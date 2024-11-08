@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Animasyonlu Yüzler</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .kutu {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            display: inline-block;
+            position: relative;
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        .kutu::before, .kutu::after {
+            content: '';
+            width: 20px; 
+            height: 20px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 60px; 
+        }
+        .kutu::before {
+            left: 60px; 
+        }
+        .kutu::after {
+            right: 60px; 
+        }
+
+        .agiz {
+            position: absolute;
+            bottom: 60px; 
+            left: 50%;
+            width: 80px;
+            height: 40px;
+            background-color: black;
+            transform: translateX(-50%);
+        }
+
+        .mutlu .agiz {
+            border-radius: 0 0 50px 50px;
+        }
+
+        .uzgun .agiz {
+            border-radius: 0 0 50px 50px;
+            transform: translateX(-50%) rotate(180deg);
+        }
+
+        .saskin .agiz {
+            height: 50px; 
+            border-radius: 50%;
+        }
+
+        .sinirli .agiz {
+            height: 15px; 
+            border-radius: 0;
+        }
+
+        .kapanan .agiz {
+            opacity: 0;
+            transform: scale(0);
+            transition: opacity 1s, transform 1s;
+        }
+
+        .yukari-asagi {
+            background-color: #812895;
+            animation: yukariAsagi 2s infinite alternate;
+        }
+        .buyume-kuculme {
+            background-color: #d72f1d;
+            animation: buyumeKuculme 2s infinite alternate;
+        }
+        .kaybol-belir {
+            background-color: #ca6566;
+            animation: kaybolBelir 2s infinite alternate;
+        }
+        .saga-sola {
+            background-color: #2ecc71;
+            animation: sagaSola 2s infinite alternate;
+        }
+        .dondur {
+            background-color: #31397a;
+            animation: dondur 2s infinite linear;
+        }
+
+        @keyframes yukariAsagi {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(50px); }
+        }
+        @keyframes buyumeKuculme {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.5); }
+        }
+        @keyframes kaybolBelir {
+            0% { opacity: 1; }
+            100% { opacity: 0.2; }
+        }
+        @keyframes sagaSola {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(50px); }
+        }
+        @keyframes dondur {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="kutu yukari-asagi mutlu">
+        <div class="agiz"></div>
+    </div>
+    <div class="kutu buyume-kuculme uzgun">
+        <div class="agiz"></div>
+    </div>
+    <div class="kutu kaybol-belir saskin">
+        <div class="agiz"></div>
+    </div>
+    <div class="kutu saga-sola sinirli">
+        <div class="agiz"></div>
+    </div>
+    <div class="kutu dondur kapanan">
+        <div class="agiz"></div>
+    </div>
+</body>
+</html>
