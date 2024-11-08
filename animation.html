@@ -12,46 +12,46 @@
         body {
             display: flex;
             justify-content: space-around;
-            align-items: flex-start;
+            align-items: center;
             flex-wrap: wrap;
             height: 100vh;
             background-color: #f4f4f4;
             padding: 20px;
         }
         .kutu {
-            width: 15vw; /* Kutunun genişliği ekran genişliğine göre ayarlanıyor */
-            height: 15vw; /* Yükseklik genişliğe bağlı */
+            width: 15vw;
+            height: 15vw;
             position: relative;
             border-radius: 50%;
             background-color: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            min-width: 150px; /* Minimum genişlik */
-            min-height: 150px; /* Minimum yükseklik */
-            max-width: 200px; /* Çok büyük ekranlarda maksimum genişlik */
-            max-height: 200px; /* Maksimum yükseklik */
+            min-width: 150px;
+            min-height: 150px;
+            max-width: 200px;
+            max-height: 200px;
         }
         .kutu::before, .kutu::after {
             content: '';
-            width: 20px; /* Gözlerin boyutu sabit */
+            width: 20px;
             height: 20px;
             background-color: black;
             border-radius: 50%;
             position: absolute;
-            top: 40px;
+            top: 35%;
         }
         .kutu::before {
-            left: 40px;
+            left: 25%;
         }
         .kutu::after {
-            right: 40px;
+            right: 25%;
         }
 
         .agiz {
             position: absolute;
-            bottom: 30px;
+            bottom: 20%;
             left: 50%;
-            width: 80px;
-            height: 40px;
+            width: 70px;
+            height: 35px;
             background-color: black;
             transform: translateX(-50%);
         }
@@ -66,14 +66,14 @@
         }
 
         .saskin .agiz {
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
         }
 
         .sinirli .agiz {
-            width: 60px;
-            height: 10px;
+            width: 50px;
+            height: 8px;
             border-radius: 5px;
         }
 
