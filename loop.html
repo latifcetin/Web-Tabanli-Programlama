@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Daireler</title>
+</head>
+<body>
+    <canvas id="canvas" width="230" height="260" style="border:1px solid #000;"></canvas>
+    <script>
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+
+        const rows = 7; 
+        const columns = 6;
+
+        const radius = 10;
+        const gap = 15;
+        const startX = 25; 
+        const startY = 25;
+  
+        const startColor = [0, 190, 190];
+        const colorStep = 15; 
+
+        for (let i = 0; i < rows; i++) {
+            for (let j = 0; j < columns; j++) {
+                const x = startX + j * (2 * radius + gap);
+                const y = startY + i * (2 * radius + gap);
+
+                const r = startColor[0];
+                const g = startColor[1] - i * colorStep; 
+                const b = startColor[2] - i * colorStep; 
+
+                ctx.beginPath();
+                ctx.strokeStyle = `rgb(${r}, ${g}, ${b})`;
+                ctx.arc(x, y, radius, 0, 2 * Math.PI, true);
+                ctx.stroke();
+            }
+        }
+    </script>
+</body>
+</html>
