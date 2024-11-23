@@ -1,0 +1,104 @@
+{
+  "questions": [
+    {
+      "question": "<head> etiketi ne işe yarar?",
+      "options": {
+        "A": "Sayfanın ana başlığını eklemek için kullanılır.",
+        "B": "Sayfa içeriğini tarayıcıda görüntülemek için kullanılır.",
+        "C": "Sayfanın meta bilgilerini ve bağlantılarını tanımlamak için kullanılır.",
+        "D": "Sayfanın stil dosyalarını yüklemek için zorunlu bir alandır."
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "question": "Bir bağlantının yeni bir sekmede açılmasını sağlamak için aşağıdaki HTML özelliklerinden hangisi kullanılır?",
+      "options": {
+        "A": "rel=\"newtab\"",
+        "B": "target=\"_self\"",
+        "C": "target=\"_blank\"",
+        "D": "rel=\"noopener\""
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "question": "HTML'de bir görselin sayfada görüntülenmesi için kullanılan doğru etiket aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "<img>",
+        "B": "<image>",
+        "C": "<picture>",
+        "D": "<src>"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "question": "Bir HTML dosyasına harici bir CSS dosyası eklemek için kullanılan doğru etiket nedir?",
+      "options": {
+        "A": "<style>",
+        "B": "<link>",
+        "C": "<script>",
+        "D": "<head>"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "question": "Aşağıdaki CSS seçicilerinden hangisi bir HTML öğesinin sadece id değerini seçmek için kullanılır?",
+      "options": {
+        "A": "#",
+        "B": ".",
+        "C": ":",
+        "D": "*"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "question": "Flexbox düzeninde öğeleri yatayda ortalamak için hangi CSS özelliği kullanılır?",
+      "options": {
+        "A": "align-content",
+        "B": "justify-content",
+        "C": "align-items",
+        "D": "display: flex"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "question": "HTML ve CSS arasında ilişki kurmanın harici bir stil dosyası kullanımı dışında bir yolu nedir?",
+      "options": {
+        "A": "<style> etiketi ile CSS kurallarını HTML'in <head> bölümüne eklemek",
+        "B": "CSS kodlarını doğrudan <script> etiketinde yazmak",
+        "C": "CSS kodlarını HTML'deki <meta> etiketi içinde yazmak",
+        "D": "CSS kurallarını <link> etiketi olmadan <body> içine yazmak"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "question": "HTML öğelerinde bir olay (event) yakalamak ve bir işlev çalıştırmak için aşağıdaki yöntemlerden hangisi kullanılır?",
+      "options": {
+        "A": "element.addEventListener(\"click\", function)",
+        "B": "element.onTrigger(\"click\", function)",
+        "C": "element.activateEvent(\"click\", function)",
+        "D": "element.callEvent(\"click\", function)"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "question": "Canvas API'de, bir metni sadece dış hatlarıyla çizen yöntem hangisidir?",
+      "options": {
+        "A": "ctx.fillText",
+        "B": "ctx.strokeText",
+        "C": "ctx.outlineText",
+        "D": "ctx.textStroke"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "question": "Canvas API'de çizim yapılırken koordinat sistemi nasıl çalışır?",
+      "options": {
+        "A": "Sol üst köşe (0,0) noktasıdır.",
+        "B": "Sağ alt köşe (0,0) noktasıdır.",
+        "C": "Canvas’ın merkezi (0,0) noktasıdır.",
+        "D": "Koordinat sistemi yoktur."
+      },
+      "correctAnswer": "A"
+    }
+  ]
+}
