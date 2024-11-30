@@ -2,26 +2,21 @@ fetch('blooket.json')
     .then(response => response.json())
     .then(data => {
         const quizDiv = document.getElementById('quiz');
-
+        
         data.questions.forEach((soru, index) => {
             const soruDiv = document.createElement('div');
             soruDiv.className = 'soru';
-
-            const optionsHtml = Object.entries(soru.options).map(([key, value]) => 
-                `<label>
-                    <input type="radio" name="soru${index}" value="${key}">
-                    ${key}: ${value}
-                </label>`
-            ).join('<br>');
-
             soruDiv.innerHTML = `
                 <p>${index + 1}. ${soru.question}</p>
-                ${optionsHtml || "Şıklar yüklenemedi."}
+                ${Object.entries(soru.options).map(([key, value]) => 
+                    `<label>
+                        <input type="radio" name="soru${index}" value="${key}"> 
+                        ${key}: ${value}
+                    </label>`
+                ).join('<br>')}
             `;
             quizDiv.appendChild(soruDiv);
         });
-
-        window.correctAnswers = data.questions.map(soru => soru.correctAnswer);
     });
 
 function sonucuHesapla() {
@@ -30,7 +25,7 @@ function sonucuHesapla() {
 
     sorular.forEach((soru, index) => {
         const secilen = soru.querySelector(`input[name="soru${index}"]:checked`);
-        if (secilen && secilen.value === window.correctAnswers[index]) {
+        if (secilen && secilen.value === 'C') {
             dogru++;
         }
     });
